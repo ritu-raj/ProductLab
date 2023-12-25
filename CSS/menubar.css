@@ -1,0 +1,109 @@
+.html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url("../Images/monopoly.jpg");    
+    background-repeat: no-repeat;
+    /*background-size: 200px 200px; */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 300vh;
+} 
+
+.menu-bar-flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    /* height:40px; */    /*We must not keep height value in parent container or else, it might override flex-direction: column values and keep container items in a flex: row format */
+    background-color: gold;
+    border-color: maroon;
+
+}
+
+.menu-item-1{
+    /* width: 5rem; */
+
+    background-color: gold;
+    width: 100px;
+    padding: 10px 10px 10 px 10px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: maroon;
+  
+
+}
+
+.menu-item-2{
+    /* width: 5rem; */
+
+    background-color: gold;
+    width: 100px;
+    padding: 10px 10px 10 px 10px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: maroon;
+}
+
+.menu-item-3{
+    /* width: 5rem; */
+
+    background-color: gold;
+    width: 100px;
+    padding: 10px 10px 10 px 10px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: maroon;
+}
+
+.menu-item-4{
+    /* width: 5rem; */
+
+    background-color: gold;
+    width: 100px;
+    padding: 10px 10px 10 px 10px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: maroon;
+}
+
+.menu-item-5{
+    /* width: 5rem; */
+
+    background-color: gold;
+    width: 100px;
+    padding: 10px 10px 10 px 10px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: maroon;
+}
+
+.Search-Bar{
+
+    background-color: gold;
+    width: 300px;
+    padding: 10px 10px 10 px 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: maroon;
+}
+
+@media screen and (min-width: 600px)
+{
+    .menu-bar-flex-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        height:40px;
+        background-color: gold;
+        border-color: maroon;
+    
+    }
+    
+}
+    
+    

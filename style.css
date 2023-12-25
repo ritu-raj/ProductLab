@@ -1,0 +1,14 @@
+body{
+    background-color: #484545;
+    margin: 20px;
+    padding:0px;
+}
+.fly{
+    /*background-image: url(https://content.codecademy.com/programs/code-foundations-path/airplane.jpeg); */
+    background-position: center center;
+    background-size: cover;
+    color: rgb(174, 170, 165);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 550px;
+    width: 100%;
+}

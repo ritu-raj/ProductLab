@@ -1,0 +1,73 @@
+
+.html {
+    font-size: 16px;
+}
+
+
+body{
+    padding: 1rem;
+}
+
+
+label {
+    display: block;
+}
+
+.formss1 {
+    margin-bottom: 5rem;
+    width: 25%;
+}
+
+.gridbox{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    column-gap: 24 px;
+
+}
+
+input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+}
+
+input[type='text']:focus
+{
+    border-color: darkblue;
+}
+
+.g-child-1
+{
+    background-color:rgb(208, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.g-child-2
+{
+    background-color:aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  button{
+    background-color: blueviolet;
+    border-radius: 0.1rem;
+    color: #fff;    
+    border:0;
+    padding: 0.45rem 0.7rem;
+
+  }
+
+  input[type='radio']
+{
+    background-color: rgb(139, 53, 0);
+}

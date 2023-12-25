@@ -1,0 +1,227 @@
+html {
+    font-size: 16 px;
+}
+
+#color_one {
+    color: blueviolet;
+}
+
+#color_two {    
+    color: rgb(46, 43, 226);
+}
+
+#color_three {
+    color: rgb(226, 101, 43);
+}
+
+.box-head{
+    position: relative;
+    width: auto;
+    height: 6 rem;
+    border: gold;   
+    background-color: gold;  
+}   
+
+
+.container
+{border: 30 px;
+background-color: antiquewhite;
+display:flex;
+flex-direction: column;
+}
+
+.flex-box-container
+{border: 30 px;
+background-color: antiquewhite;
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 20px 20px 20px 20px;
+border: 10 px rgb(238, 134, 130);
+}
+
+
+.box1{
+    width: 100px;
+    height: 200 px;
+    background-color: gold;
+    border: 20 px;
+    border-color: #970404;
+    padding: 20px 20px 20px 20px;
+    display: inline-block;
+    }   
+
+.box2{
+        width: 100px;
+        height: 200 px;
+        background-color: gold;
+        border: 20 px;
+        border-color: rgb(151, 4, 4);
+        padding: 20px 20px 20px 20px;
+        margin-left: 10px;
+        display: inline-block;
+    }       
+
+
+.box3{
+        width: 100px;
+        height: 200 px;
+        background-color: gold;
+        border: 20 px;
+        border-color: rgb(151, 4, 4);
+        padding: 20px 20px 20px 20px;
+        display: inline-block;
+    }   
+
+.box4{
+        width: 100px;
+        height: 200 px;
+        background-color: gold;
+        border: 20 px;
+        border-color: rgb(151, 4, 4);
+        padding: 20px 20px 20px 20px;
+        display: inline-block;
+    }   
+
+.box-overflow-test {
+    width: 100px;
+    height: 200 px;
+    background-color: gold;
+    border: 20 px;
+    border-color: rgb(151, 4, 4);
+    padding: 20px 20px 20px 20px;
+    display: inline-block;
+    }   
+
+.wicked-float{
+    width: 70 px;
+    height: 70 px;
+    background-color: rgb(37, 110, 173);
+    float: right;
+    margin-right: 20 px;
+    border: 10 px solid rgb(242, 7, 7);
+    }   
+
+
+.sample-grid-box{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 30% 70%;
+    border: 3px solid rgb(151, 4, 4);
+    grid-gap:5px;
+    justify-items: center;
+    align-items: center;  
+}
+
+.box-inside-grid-1{
+    width: 5rem;
+    height: 5rem;
+    text-emphasis-color: white;
+    background-color: black;
+    
+}
+
+.box-inside-grid-2{
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+}
+    
+.box-inside-grid-3{
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+}
+
+.box-inside-grid-4{
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+}
+
+
+.box-inside-grid-5{
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+}
+
+
+.box-inside-grid-6{
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+}
+
+
+.Grid-Apna-Time-Aayega-Jald{
+    display: grid;
+    width: 25%;  /* width of the grid-container is now half of the screen-size */
+    /*grid-template: 33% 33% 33% / 33% 33% 33% ; */
+    grid-template: 6rem 6rem 6rem / 6rem 6rem 6rem;
+    border: solid maroon;
+    border-width: 21 rem;
+    row-gap: 0.25 rem;
+    column-gap: 16 px;
+    
+}
+
+
+.boxgrid-1{
+    /* width: 5rem; */
+    height: 5rem;
+    background-color: gold;
+}
+
+.boxgrid-1-placement {
+   grid-column: 1 /4;  /*don't span from column 1-3 but from column 1 to column 2.9; that will keep a gap */
+
+}
+
+.boxgrid-2{
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+}
+
+.boxgrid-2-placement {
+        grid-column: 1 /2;  /*don't span from column 1-3 but from column 1 to column 2.9; that will keep a gap */
+ 
+ }
+
+.boxgrid-3{
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+}
+
+.boxgrid-4{
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+}
+
+.boxgrid-5{
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+}
+
+.boxgrid-6{
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+}
+
+.box121{
+    margin: 80px;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 5rem;
+    background: gold;
+}
+
+.box121:hover {
+    transform: scale(1.5);
+}
