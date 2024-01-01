@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .collapsible {
+        cursor: pointer;
+        padding: 18px;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+      }
+
+      .content {
+        display: none;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+
+      .active {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="collapsible">Toggle Collapsible 1</button>
+    <div class="content">
+      <p>Content for Collapsible 1.</p>
+    </div>
+
+    <button class="collapsible">Toggle Collapsible 2</button>
+    <div class="content">
+      <p>Content for Collapsible 2.</p>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

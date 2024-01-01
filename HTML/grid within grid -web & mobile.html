@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .testimonials {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+      }
+
+      .company-column,
+      .testimony-column-from-2-to-4 {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      .company-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .company-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .tagline {
+        font-style: italic;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .button {
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .testimony-column-2-or-3-or-4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .hyperlink {
+        color: #3366cc;
+        text-decoration: none;
+        width: 48%; /* Adjust the width based on your preference */
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        box-sizing: border-box;
+      }
+
+      @media (min-width: 600px) {
+        .testimonials {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .company-column,
+        .testimony-column-from-2-to-4 {
+          margin-bottom: 0;
+        }
+
+        .testimony-column-2-or-3-or-4 {
+          gap: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testimonials">
+      <!-- Company Column -->
+      <div class="company-column">
+        <div class="company-name">Rahu</div>
+        <div class="tagline">Delivering Excellence</div>
+        <button class="button">Learn More</button>
+      </div>
+
+      <!-- Testimony Columns -->
+      <div class="testimony-column-from-2-to-4">
+        <div class="testimony-column-2-or-3-or-4">
+          <a href="#" class="hyperlink">2*1</a>
+          <a href="#" class="hyperlink">2*2</a>
+          <a href="#" class="hyperlink">2*3</a>
+        </div>
+
+        <!-- Repeat similar rows for 4*1 to 6*3 -->
+        <!-- ... -->
+
+        <div class="testimony-column-2-or-3-or-4">
+          <a href="#" class="hyperlink">3*1</a>
+          <a href="#" class="hyperlink">3*2</a>
+          <a href="#" class="hyperlink">3*3</a>
+        </div>
+
+        <div class="testimony-column-2-or-3-or-4">
+          <a href="#" class="hyperlink">4*1</a>
+          <a href="#" class="hyperlink">4*2</a>
+          <a href="#" class="hyperlink">4*3</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

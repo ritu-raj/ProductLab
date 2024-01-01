@@ -136,5 +136,14 @@ p{
 }
 
 .list--tick {
-    
+    list-style-image: url(../Images/tick.svg);
+    padding-left: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .list--tick {
+        list-style-image: url(../Images/tick.svg);
+        padding-left: 0;
+    }
 }

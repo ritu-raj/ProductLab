@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Layout</title>
+    <style>
+      /* Common styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .testimonial-container {
+        margin: 20px;
+      }
+
+      /* Laptop view using CSS Grid */
+      @media (min-width: 768px) {
+
+          .testimonial-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 20px;
+        }
+
+        .container-1, 
+        .container-2 {
+          border:0.5rem solid #fad105;
+          /* overflow: hidden; */
+        }
+
+        .testimonial-text {
+          background-color: #f8f8f8;
+          padding: 20px;
+          border-radius: 8px;
+        }
+
+        .know-more-button {
+          background-color: #3498db;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+
+      /* Mobile view */
+      @media (max-width: 767px) {
+
+        .testimonial-text,
+        .know-more-button {
+          width: 100%;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+        }
+
+        .container-1, 
+        .container-2 {
+          border:0.5rem solid #fad105;
+          /* overflow: hidden; */
+          margin-bottom: 2rem;
+        }
+
+        .know-more-button {
+          background-color: #3498db;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testimonial-container">
+      <!-- Container-1 will give a border around the Container-1 items --> 
+      <div class="container-1">
+      <!-- Testimonial Text Section -->
+      <div class="testimonial-text">
+        <p>
+          This is the testimonial text. It can be as long or as short as needed.
+        </p>
+      </div>
+
+      <!-- Know More Button Section -->
+      <div class="know-more-button">
+        <a
+          href="some-other-page.html"
+          style="text-decoration: none; color: inherit"
+        >
+          Know More
+        </a>
+      </div>
+    </div>
+
+      <!-- Container-1 will give a border around the Container-1 items --> 
+      
+      <div class="container-2">
+
+      <div class="testimonial-text">
+        <p>
+          This is the testimonial text. It can be as long or as short as needed.
+        </p>
+      </div>
+
+      <!-- Know More Button Section -->
+      <div class="know-more-button">
+        <a
+          href="some-other-page.html"
+          style="text-decoration: none; color: inherit"
+        >
+          Know More
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
