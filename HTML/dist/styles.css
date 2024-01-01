@@ -1,0 +1,249 @@
+:root{
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-accent: #ff3400;
+    --color-headings: #1b0760;
+    --color-body: #918ca4;
+
+}   
+
+html{
+    /* font-size=10px */
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #D49DA5;
+    font-family: Inter, Arial,Helvetica, sans-serif;
+    font-size: 2.4rem;
+    color: var(--color-body);
+}
+
+h1,h2,h3 {
+    color: var(--color-headings);
+    margin-bottom: 1rem;
+}
+
+.nav-bar{
+    background-color: #950B1E;;
+    padding: 14px 12px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item-1 {
+    margin-right: 3px;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding-left: 3rem;
+}
+
+.nav-item-2 {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    transition: color 0.3s;
+    padding-top: 0.5rem;
+}
+
+.nav-item:hover {
+    color: #ddd;
+}
+
+
+.intro-container-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
+    color: #000000e3;
+    flex: 1;
+    max-width: 100%; /* Set a maximum width for consistency */
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align:left;
+    height: 100px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px; /* Set a maximum width for consistency */
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    height: 300px;
+}
+
+.card img {
+    width: 100%; /* Make sure the image takes the full width of the card */
+    border-bottom: 1px solid #ddd;
+    height:180px;
+}
+
+.card-text {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
+    color: #000000e3;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.card-text-small {
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
+    color: #000000e3;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.intro-container-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
+    color: #000000e3;
+    max-width: 100%; /* Set a maximum width for consistency */
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align:left;
+    height: 250px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 550px)
+{
+
+    html{
+        /* font-size=10px */
+        font-size: 50%;
+    }
+
+    .nav-bar{
+        background-color: #950B1E;;
+        padding: 20px 20px;
+        display: grid;
+        grid-template-columns: 4fr 2.5fr 3fr;
+        gap: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        margin-bottom: 10px;
+    }  
+
+    .card {
+        flex: 1;
+        max-width: 300px; /* Set a maximum width for consistency */
+        margin: 0 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        min-height: 250px;
+        margin-bottom: 20px;
+    }
+
+    
+
+    .card img {
+        width: 100%; /* Make sure the image takes the full width of the card */
+        border-bottom: 1px solid #ddd;
+        height:180px;
+    }
+    
+
+    .intro-container-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
+        color: #000000e3;
+        max-width: 100%; /* Set a maximum width for consistency */
+        margin: 0 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        text-align:left;
+        height: 150px;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .intro-container-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
+        color: #000000e3;
+        max-width: 100%; /* Set a maximum width for consistency */
+        margin: 0 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        text-align:left;
+        height: 350px;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    #contact{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 300px;
+        white-space: nowrap; /* Prevent line breaks */
+    }
+
+    .nav-item-1 {
+        margin-right: 3px;
+        text-decoration: none;
+        color: white;
+        text-align: left;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s;
+        padding-left:2.2rem;
+    }
+    
+
+    .nav-item-2 {
+        margin-right: 20px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-weight:200;
+        font-size: 12px;
+        transition: color 0.3s;
+    }
+    
+} 
