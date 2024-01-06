@@ -13,7 +13,8 @@ html{
 }
 
 body {
-    background-color: #D49DA5;
+    /*background-color: #ede2e2;*/
+    background-color: #edf2f1;;
     font-family: Inter, Arial,Helvetica, sans-serif;
     font-size: 2.4rem;
     color: var(--color-body);
@@ -83,6 +84,7 @@ h1,h2,h3 {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    /*background-color: #950B1E; */
 }
 
 .card {
@@ -94,6 +96,7 @@ h1,h2,h3 {
     overflow: hidden;
     text-align: center;
     height: 300px;
+    background-color: #950B1E;
 }
 
 .card img {
@@ -105,7 +108,7 @@ h1,h2,h3 {
 .card-text {
     padding: 10px;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
-    color: #000000e3;
+    color: white;
     font-size: 2rem;
     font-weight: 300;
 }
@@ -113,7 +116,7 @@ h1,h2,h3 {
 .card-text-small {
     padding: 0px;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
-    color: #000000e3;
+    color: white;
     font-size: 1.5rem;
     font-weight: 200;
 }
@@ -159,6 +162,7 @@ h1,h2,h3 {
         justify-content: space-around;
         padding: 20px;
         margin-bottom: 10px;
+        /*background-color: #950B1E;*/
     }  
 
     .card {
@@ -171,6 +175,7 @@ h1,h2,h3 {
         text-align: center;
         min-height: 250px;
         margin-bottom: 20px;
+        background-color: #950B1E;
     }
 
     
@@ -237,7 +242,7 @@ h1,h2,h3 {
     
 
     .nav-item-2 {
-        margin-right: 20px;
+        margin-right: 10px;
         text-decoration: none;
         color: white;
         text-align: center;
