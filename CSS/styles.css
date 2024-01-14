@@ -14,7 +14,7 @@ html{
 
 body {
     /*background-color: #ede2e2;*/
-    background-color: #edf2f1;;
+    background-color: #edf2f1;
     font-family: Inter, Arial,Helvetica, sans-serif;
     font-size: 2.4rem;
     color: var(--color-body);
@@ -25,14 +25,16 @@ h1,h2,h3 {
     margin-bottom: 1rem;
 }
 
+
 .nav-bar{
     background-color: #950B1E;
     padding: 14px 12px;
     display: grid;
     /* grid-template-columns: 5fr 0.6fr 0.6fr; */
-    grid-template-columns: 5fr 0.6fr 0.6fr;
+    grid-template-columns: 5fr 1fr 1fr;
     gap: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100wh; /*Nav bar 100% width */
 }
 
 .nav-item-1 {
@@ -52,13 +54,29 @@ h1,h2,h3 {
     color: white;
     text-align: center;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     transition: color 0.3s;
     padding-top: 0.5rem;
 }
 
-.nav-item:hover {
-    color: #ddd;
+.nav-item-1:hover {
+    color: #fd9797;
+}
+
+
+
+.nav-item-1:hover:: after {
+    background-color: #fd9797;
+}
+
+
+.nav-item-2:hover {
+    color: #fd9797;
+}
+
+
+.nav-item-2:hover:: after {
+    background-color: #fd9797;
 }
 
 
@@ -83,7 +101,7 @@ h1,h2,h3 {
 
 .card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 20px;
     /*background-color: #950B1E; */
 }
@@ -127,7 +145,7 @@ h1,h2,h3 {
     flex-direction: column;
     padding: 20px 30px;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
-    color: #000000e3;
+    color: beige;
     max-width: 100%; /* Set a maximum width for consistency */
     margin: 0 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -137,6 +155,11 @@ h1,h2,h3 {
     height: 250px;
     font-size: 1.3rem;
     font-weight: 500;
+    background-color: #950B1E;
+}
+
+a {
+    color: inherit;
 }
 
 @media screen and (max-width: 550px)
@@ -151,7 +174,7 @@ h1,h2,h3 {
         background-color: #950B1E;;
         padding: 20px 20px;
         display: grid;
-        grid-template-columns: 4fr 2.5fr 3fr;
+        grid-template-columns: 5.5fr 3fr 3fr;
         /*grid-template-columns: 5fr 1fr 1fr; */
         gap: 0.5rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -161,7 +184,8 @@ h1,h2,h3 {
     .card-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         padding: 20px;
         margin-bottom: 10px;
         /*background-color: #950B1E;*/
@@ -194,16 +218,17 @@ h1,h2,h3 {
         flex-direction: column;
         padding: 20px 30px;
         font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
-        color: #000000e3;
+        color: beige;
         max-width: 100%; /* Set a maximum width for consistency */
-        margin: 0 10px;
+        margin: 10px 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         overflow: hidden;
         text-align:left;
-        height: 150px;
+        height: 120px;
         font-size: 1.3rem;
         font-weight: 500;
+        background-color: #950B1E;
     }
 
     .intro-container-2 {
@@ -211,16 +236,17 @@ h1,h2,h3 {
         flex-direction: column;
         padding: 20px 30px;
         font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
-        color: #000000e3;
+        color: beige;
         max-width: 100%; /* Set a maximum width for consistency */
         margin: 0 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         overflow: hidden;
         text-align:left;
-        height: 350px;
+        height: 300px;
         font-size: 1.3rem;
         font-weight: 500;
+        background-color: #950B1E;
     }
 
     #contact{
@@ -237,7 +263,7 @@ h1,h2,h3 {
         color: white;
         text-align: left;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 14.5px;
         transition: color 0.3s;
         padding-left:2.2rem;
     }
@@ -249,8 +275,29 @@ h1,h2,h3 {
         color: white;
         text-align: center;
         font-weight:200;
-        font-size: 12px;
+        font-size: 10px;
         transition: color 0.3s;
     }
+
+    .nav-item-1:hover {
+        color: #fd9797;
+    }
+    
+    
+    
+    .nav-item-1:hover:: after {
+        background-color: #fd9797;
+    }
+    
+    
+    .nav-item-2:hover {
+        color: #fd9797;
+    }
+    
+    
+    .nav-item-2:hover:: after {
+        background-color: #fd9797;
+    }
+    
     
 } 

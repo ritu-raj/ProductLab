@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+
+html{
+    /* font-size=10px */
+    font-size: 62.5%;
+}
+
+ 
+  body {
+    /*background-color: #ede2e2;*/
+    margin:0;
+    padding:0;
+    background-color: #edf2f1;
+    font-family: Inter, Arial,Helvetica, sans-serif;
+    font-size: 2.4rem;
+    color: #918ca4;
+  }
+
+
+.nav-bar{
+    background-color: #950B1E;
+    padding: 14px 12px;
+    display: grid;
+    /* grid-template-columns: 5fr 0.6fr 0.6fr; */
+    grid-template-columns: 5fr 1fr 1fr;
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100wh; /*Nav bar 100% width */
+}
+
+.nav-item-1 {
+    margin-right: 3px;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding-left: 3rem;
+}
+
+.nav-item-2 {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    transition: color 0.3s;
+    padding-top: 0.5rem;
+}
+
+.nav-item-1:hover {
+    color: #fd9797;
+}
+
+
+
+.nav-item-1:hover:: after {
+    background-color: #fd9797;
+}
+
+
+.nav-item-2:hover {
+    color: #fd9797;
+}
+
+
+.nav-item-2:hover:: after {
+    background-color: #fd9797;
+}
+
+        .center-placement-for-gridbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+        }
+
+        .gridbox-main-1{
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+            gap: 20px;
+            width: 85%;
+            height: 75%;
+            margin-top: 3.5%;
+            margin-bottom: 2.5%;
+            border-radius: 14px;
+        }
+
+        .gridbox-col-1{
+            background-color: #950B1E;
+            padding: 20px 30px; 
+            font-family: 'Montserrat'; /* Apply Montserrat font to card text */
+            font-size: 1.3rem;
+            color: beige;
+            font-weight: 500;
+            border-radius: 14px;
+        }
+
+        .gridbox-col-2{
+            background-color: #950B1E;
+            border-radius: 14px;
+        }
+
+        .card {
+            flex: 1;
+            max-width: 55%; /* Set a maximum width for consistency */
+            margin-top: 5%;
+            margin-left: 22.5%; 
+            border-radius: 6px;
+            overflow: hidden;
+            text-align: center;
+            height: 160px;
+            background-color: #950B1E;
+            margin-bottom: 6px;
+             }
+
+            .card img {
+            width: 100%; /* Make sure the image takes the full width of the card */
+            border-bottom: 1px solid #ddd;
+            height: 160px;
+             }
+
+            .card-text {
+                padding: 6px;
+                font-family: 'Montserrat' ;
+                color: beige;
+                font-size: 15px;
+                justify-content: center;
+                max-width: 60%;
+                margin-left: 22.5%;
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                }
+            
+
+        .portfolio-button {
+            width: 45%;
+            height: 14px;
+            margin-left: 22.5%;   
+            background-color: #ffffff;
+            color: #333333;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            padding: 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            }   
+            
+           .portfolio-button :hover {
+            color: #950B1E;
+            }
+
+            a {
+                color: inherit;
+            }
+
+
+.intro-container-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
+    color: beige;
+    max-width: 100%; /* Set a maximum width for consistency */
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align:left;
+    height: 250px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: #950B1E;
+}     
+
+@media screen and (max-width: 550px)
+{
+
+    html{
+        /* font-size=10px */
+        font-size: 50%;
+    }
+
+    .nav-bar{
+        background-color: #950B1E;;
+        padding: 20px 20px;
+        display: grid;
+        grid-template-columns: 5.5fr 3fr 3fr;
+        /*grid-template-columns: 5fr 1fr 1fr; */
+        gap: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-item-1 {
+        margin-right: 3px;
+        text-decoration: none;
+        color: white;
+        text-align: left;
+        font-weight: bold;
+        font-size: 14.5px;
+        transition: color 0.3s;
+        padding-left:2.2rem;
+    }
+    
+
+    .nav-item-2 {
+        margin-right: 10px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-weight:200;
+        font-size: 10px;
+        transition: color 0.3s;
+    }
+    
+
+.nav-item-1:hover {
+    color: #fd9797;
+}
+
+
+
+.nav-item-1:hover:: after {
+    background-color: #fd9797;
+}
+
+
+.nav-item-2:hover {
+    color: #fd9797;
+}
+
+
+.nav-item-2:hover:: after {
+    background-color: #fd9797;
+}
+
+.gridbox-main-1{
+            display: grid;
+            grid-template-rows: 0.5fr 1fr;
+            grid-template-columns: initial;
+            gap: 20px;
+            width: 85%;
+            height: 75%;
+            margin-top: 3.5%;
+            margin-bottom: 2.5%;
+            border-radius: 14px;
+        }
+
+        .gridbox-col-1{
+            background-color: #950B1E;
+            padding: 20px 30px; 
+            font-family: 'Montserrat'; /* Apply Montserrat font to card text */
+            font-size: 1.3rem;
+            color: beige;
+            font-weight: 500;
+            border-radius: 14px;
+            order:2;
+        }
+
+        .gridbox-col-2{
+            background-color: #950B1E;
+            border-radius: 14px;
+            order:1;
+            padding-bottom: 10px;
+        }
+    
+
+    .intro-container-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to card text */
+        color: beige;
+        width: 100%; /* Set a maximum width for consistency */
+        margin: 0 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        text-align:left;
+        height: 350px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        background-color: #950B1E;
+    }
+
+    #contact{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 300px;
+        white-space: nowrap; /* Prevent line breaks */
+    }
+
+    .nav-item-1 {
+        margin-right: 3px;
+        text-decoration: none;
+        color: white;
+        text-align: left;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s;
+        padding-left:2.2rem;
+    }
+    
+
+    .nav-item-2 {
+        margin-right: 10px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-weight:200;
+        font-size: 12px;
+        transition: color 0.3s;
+    }
+    
+} 
+
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="#home" class="nav-item-1">RITU RAJ BARUAH</a>
+        <a href="#about" class="nav-item-2">More about me</a>
+        <a href="#contact" class="nav-item-2">Contact Details</a>
+      </div>
+
+ <div class="center-placement-for-gridbox">    
+
+ <div class="gridbox-main-1">
+    <div class="gridbox-col-1">
+        <p><strong>BACKGROUND</strong></p>
+       
+        <p>Currently working at L&T SuFin (as a Product Manager)</p>
+        <p>Ex- EXL, Automovill, PwC, TCS</p>  
+        <p>Education: IIM Lucknow (MBA), JEC-Assam (B.E. in Computer Science & Engg.)</p>
+        <p>About 6 years of professional experience. View my <a href="https://www.linkedin.com/in/ritu-raj-baruah/" target="_blank">LinkedIn profile</a></p>
+    </br>
+        <p><strong>EXPERTISE</strong></p>
+        <ul>
+            <li>Product Strategy & Roadmap (Aha)</li>
+            <li>Market Research & Competitor Analysis</li>
+            <li>Business Presentations</li>
+            <li>User Interviews & CX-Optimization</li>
+            <li>User flow (Whimsical)</li>
+            <li>UI/UX Design & Prototyping (Figma)</li>
+            <li>Analytics (GA4 & Google Tag Manager)</li>
+            <li>Feature-Prioritization (Azure DevOps)</li>
+            <li>Front-End Development (HTML, CSS, Basics of JS)</li>
+        </ul>
+        
+    </br>
+
+    </div>
+
+    <div class="gridbox-col-2">
+        <div class="card"
+        onclick="redirectTo('\C:\Code with Moss\HTML\index.html')">
+
+        <img src="\C:\Code with Moss\HTML\rb-b&w.jpeg" alt="Card 1 Image"/>
+        </div>
+        <div class="card-text"><h2> Ritu Raj Baruah </h2>
+            <p> Product Manager who loves to tinker with front-end code & has a penchant for UI/UX</p>
+        </div>
+             
+        <div class="portfolio-button" onclick="redirectTo('index.html')">
+            <b>View Portfolio</b>
+        </div>
+        
+    </div>
+
+ </div>    
+    
+ </div>
+
+ <script>  
+    function redirectTo(url) {
+      window.open(url, "_blank");
+    }
+  </script>
+
+<div class="intro-container-2">
+    <p id="about"><b>MORE ABOUT ME</b>
+      
+      <p>
+        When I'm not working, I try to take out time for these pursuits:
+        Road-Trips, Work-out, Public Speaking, Investment/Equity, Street-food
+        & sometimes, if budget permits, Inter-continental Cuisines 😊
+      </p>
+
+      <p>
+        A heart-felt thanks for stopping by this site 💖 
+      </p>
+    </p>
+
+    <p id="contact">
+      <b>Email:</b> rituraj.baruah@iiml.org |
+      <b>Contact Number:</b> +91-98719-93909 |
+      <b>My LinkedIn Profile:</b> <a href="https://www.linkedin.com/in/ritu-raj-baruah/" target="_blank"> Click to visit </a>
+    </p>
+  </div>
+
+  <br />
+  <br />
+
+
+</body>
+</html>
